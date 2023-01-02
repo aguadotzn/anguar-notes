@@ -1,6 +1,9 @@
-# Personal 🅰️ notes 
+# Personal 🅰️ notes ![Typescript](https://img.shields.io/badge/-Typescript-blue)
 
 A bit of everything about angular.
+
+> ⚠️ **Disclaimer** ⚠️ 
+> This notes are totally personal 
 
 
 ## Table of Contents
@@ -151,6 +154,11 @@ Collection of extensions/plugins/misc that I use for coding angular
 
 
 ---
-Feel free to propose improvements. Authored and maintained by [Adrián Aguado](https://github.com/aguadotzn). Copyright © 2023.
+### License
+
+This source content is licensed under the _Creative Commons Attribution 4.0 International_ - see the [LICENSE](LICENSE.md) for details.
+
+
+Feel free to propose improvements via pull request. Authored and maintained by [Adrián Aguado](https://github.com/aguadotzn). Copyright © 2023.
 
 > For any inquiries, you can contact me on [Twitter](https://twitter.com/aguadotzn).
