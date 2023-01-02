@@ -141,3 +141,7 @@ Collection of extensions/plugins/misc that I use for coding angular
   - [Alpha order](https://marketplace.visualstudio.com/items?itemName=ue.alphabetical-sorter)
 
 
+---
+Feel free to propose improvements. Authored and maintained by [Adrián Aguado](https://github.com/aguadotzn). Copyright © 2023.
+
+> For any inquiries, you can contact me on [Twitter](https://twitter.com/aguadotzn).
