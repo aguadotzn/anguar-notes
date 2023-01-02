@@ -25,7 +25,10 @@ Use this commands inside an angular project.
 
 ## Architecture
 The architecture is one of the most important aspects of any application. There are many ways one can structure an Angular app. Every design decision has its own set of benefits and draw-backs.  Let's take a look at the following diagram of the final architecture we want to achieve. 
-![Angular architecture](.img/../img/architecture1.png)
+
+<p align="center">
+  <img src=".img/../img/architecture1.png" alt="Angular architecture" />
+</p>
 
 Let's explore the different parts 
    - **CORE**: The things that are absolutely essential for the app to start. Core directory is the place where we should put singleton services, injection tokens, constants, app configurations, pipes, interceptors, guards, auth service, utils, etc. that will be used across the suite.
@@ -37,7 +40,9 @@ Let's explore the different parts
  
  If you have any doubt of where something goes:
  
- ![Angular architecture tree decision](./img/treeDecision.png)
+<p align="center">
+  <img src=".img/../img/treeDecision.png" alt="Angular architecture tree decision" />
+</p>
 
 ### Personal architecture tips
 Personally in my latests projects on top of previous characteristics I add a couple of layyers. This totally depends on the requirements of the specific application that you wanna build.
@@ -50,17 +55,21 @@ Personally in my latests projects on top of previous characteristics I add a cou
 - **LAYOUT**:  If you have an app where you repeat the layout I strongly recommend you to create an extra feature, called `layout`, that contains the `main-layout` (shared a across al the app) and the `empty-layout` (parts of the app the doesn't requiere a layout such as the login) 
 > The idea with the `main-layout` is to load the content of each page inside that layout that contains, for example, a common menu and a navigation bar that are repeated accross the entire app.
 
-![Layout example](./img/layoutExample.png)
+<p align="center">
+  <img src=".img/../img/layoutExample.png" alt="Layout example" />
+</p>
 
 - Sometimes I also differenciate between **components** and **pages**. For angular are exactly the same but I create a folder inside each lazy feature, one for _pages_ and one per _components_. “Page” is just terminology to identify a component that is being used as a route. Each route of the feature module has a page under `/page` folder.
 
 Example:
 
-![Folders example](./img/folderExample.png)
+<p align="center">
+  <img src=".img/../img/folderExample.png" alt="Folders example" />
+</p>
 
-![VsCode folders example](./img/architectureVscode.png)
-
-
+<p align="center">
+  <img src=".img/../img/architectureVscode.png" alt="Vscode folders example" />
+</p>
 
 #### 🔗 Key links
 * [Build an epic architecture in Angular](https://tomastrajan.medium.com/how-to-build-epic-angular-app-with-clean-architecture-91640ed1656)
