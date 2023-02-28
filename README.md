@@ -8,10 +8,11 @@ A bit of everything about angular.
 
 ## Table of Contents
 1. [Useful commands](#commands)
-2. [Architecture](#architecture)
-3. [Best practices](#best-practices)
-4. [Q&A](#q&a)
-5. [Coding tools](#coding-tools)
+2. [Basics](#basics)
+3. [Architecture](#architecture)
+4. [Best practices](#best-practices)
+5. [Q&A](#q&a)
+6. [Coding tools](#coding-tools)
 
 ## Commands ([Angular CLI](https://angular.io/cli))
 Use this commands inside an angular project.
@@ -19,12 +20,16 @@ Use this commands inside an angular project.
 | Command                               | Description                             | Notes                                                                                                                                                                                                                               |
 | ------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ng new {appName} --{flagName}`       | Create a new angular project            | Useful flags:<br/> Create project without tests`--skip-tests`<br/> Specify a prefix for your entire app `--prefix {prefixName}`<br/>Create the app with routing `--routing`                                                         |
-| `ng serve `                           | Run your angular project                | Useful flags: <br/>Open the browser: `-o` <br/>Specify a port `-p 666`                                                                                                                                                              |
+| `ng serve `                           | Run your angular project                | Useful flags: <br/>Open the browser: `-o` <br/>Specify a port `--port 666`                                                                                                                                                              |
 | `ng generate {type} {name} {options}` | Generate new angular code automatically | Types:    <ul>   <li>component</li>   <li>service</li>   <li>module</li>   <li>pipe</li>   <li>class</li>   <li>interface</li>   <li>enum</li>   <li>directive</li>   <li>guard</li>   <li>service-worker</li>   <li>...</li> </ul> |
 | `ng build`                            | Build your angular project              | Useful flags: <br/>Build for production `--prod`                                                                                                                                                                                    |
 | `ng test`                             | Test your angular project               |                                                                                                                                                                                                                                     |
 | `ng update`                           | Update your angular project             |                                                                                                                                                                                                                                     |
 | `ng version`                          | Outputs Angular CLI version             |                                                                                                                                                                                                                                     |
+
+
+## Basics
+If you are new
 
 ## Architecture
 The architecture is one of the most important aspects of any application. There are many ways one can structure an Angular app. Every design decision has its own set of benefits and draw-backs.  Let's take a look at the following diagram of the final architecture we want to achieve. 
@@ -153,11 +158,11 @@ Collection of extensions/plugins/misc that I use for coding angular
   - [Alpha order](https://marketplace.visualstudio.com/items?itemName=ue.alphabetical-sorter)
 
 
----
 ### License
 
 This source content is licensed under the _Creative Commons Attribution 4.0 International_ - see the [LICENSE](LICENSE.md) for details.
 
+---
 
 Feel free to propose improvements via pull request. Authored and maintained by [Adrián Aguado](https://github.com/aguadotzn). Copyright © 2023.
 
