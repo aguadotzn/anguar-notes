@@ -1,8 +1,0 @@
----
----
-
-@import '{{ site.theme }}';
-
-main {
-  background-color: aquamarine;
-}
