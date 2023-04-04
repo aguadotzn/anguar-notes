@@ -2,8 +2,7 @@
   <summary>Create component</summary>
   
   You can use the CLI. `ng g c nameComponent`
-  
-``` javascript
+```typescript
   @Component({
     selector: 'selector-name',
     templateUrl: 'name.component.html',
@@ -13,23 +12,13 @@
     ngOnInit() {}
 }
 ```
-
-```html
-<html>
-  <head>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
-</html>
-```
 </details>
 
 <details> 
   <summary>Small and useful snippets</summary>
   
   - Route params subscribe
-```javascript
+```typescript
 this.route.paramMap
   .pipe(map(params => params.get('id')), tap(id => (this.id = +id)))
   .subscribe(id => {});

@@ -11,7 +11,8 @@ author:
   <summary>Create component</summary>
   
   You can use the CLI. `ng g c nameComponent`
-```typescript
+  
+```javascript
   @Component({
     selector: 'selector-name',
     templateUrl: 'name.component.html',
@@ -21,7 +22,41 @@ author:
     ngOnInit() {}
 }
 ```
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Hello, World!</p>
+  </body>
+</html>
+```
 </details>
+
+
+  You can use the CLI. `ng g c nameComponent`
+  
+```javascript
+  @Component({
+    selector: 'selector-name',
+    templateUrl: 'name.component.html',
+  })
+  export class NameComponent implements OnInit {
+    constructor() {}
+    ngOnInit() {}
+}
+```
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Hello, World!</p>
+  </body>
+</html>
+```
 
 <details> 
   <summary>Small and useful snippets</summary>
