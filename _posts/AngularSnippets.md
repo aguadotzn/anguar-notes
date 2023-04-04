@@ -2,6 +2,9 @@
 layout: post
 title: "This post is about snipeets"
 categories: snippets
+author:
+- Bart Simpson
+- Nelson Mandela Muntz
 ---
 
 <details> 
