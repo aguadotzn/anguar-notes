@@ -1,18 +1,20 @@
 # Personal 🅰️ notes ![Typescript](https://img.shields.io/badge/-Typescript-blue)
 
-A bit of everything about angular.
+A bit of everything about angular. Personal notes about the framework.
 
-> ⚠️ **Disclaimer** ⚠️
-> This notes are totally personal
 
 ## Table of Contents
-
-1. [Useful commands](#commands)
+- General
+1. [Commands](#commands)
 2. [Basics](#basics)
 3. [Architecture](#architecture)
+
+- Advanced
+
 4. [Best practices](#best-practices)
-5. [Q&A](#q&a)
-6. [Coding tools](#coding-tools)
+5. [Architecture](#architecture)
+6. [Q&A](#q&a)
+7. [Coding tools](#coding-tools)
 
 ## Commands ([Angular CLI](https://angular.io/cli))
 
@@ -30,7 +32,7 @@ Use this commands inside an angular project.
 
 ## Basics
 
-If you are new
+If you are new into Angular please visit the basics page on how to installe it
 
 ## Architecture
 
@@ -48,6 +50,11 @@ Let's explore the different parts
   > `Feature` modules shouldn't be dependant on other modules other than the services provided by `CoreModule` and features exported by `SharedModule`
 - **SHARED**: Consider `shared` directory module as a mini-library for the UI components or for third-party components. They are not specific to a single business feature. They should be super dumb that you can take all the components, drop in another angular project, and expect to work (given the dependencies are met). This module can be then imported to each feature module.
   > Do not make a giant `SharedModule`, rather granularize each atomic feature into its own module.
+  
+  > Do not make a giant `SharedModule`, rather granularize each atomic feature into its own module.
+
+
+
 
 If you have any doubt of where something goes:
 
@@ -91,63 +98,6 @@ Example:
 - [Planning the architecture of your angular app](https://itnext.io/planning-the-architecture-of-your-angular-app-a4840bfec13b)
 - [Angular guide architecture](https://angular.io/guide/architecture)
 
-## Best practices
-
-Of course these are my **own best practices** that I'm learning on the fly with experience. I'll try to have all in mind once I'm starting a new project. Some of them are not specifically from Angular projects but could apply to any software project.
-
-### LIFT principle
-
-This principle helps you to find code quickly. That's mean:
-
-- _**L**ocate the easily_
-- _**I**dentify code at a glance_
-- _**F**lat structure as long as we can_
-- _**T**ry to stay DRY([Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself))_
-
-### SPR: Single Principle Responsibility
-
-A single class or module should only have a single responsibility.
-
-### Meaningful names
-
-It’s very important that you give good names to methods, variables, and parameters. Besides, respect the architecture of your application and name things accordingly.
-
-- Properties and methods must be [camel case](https://en.wikipedia.org/wiki/Camel_case) (e.g. `currentUser`)
-- Classes (components, services, directives...) must be upper camel case, called Pascal case (e.g. `UserComponent`)
-- Components and services should have the respective suffix on the name.
-
-### File structure conventions 🅰️
-
-Use the shortcut `example-name.component.ts|html|css|spec` to represent those various files.
-
-### Organization for readability (files) 🅰️
-
-- The most important stuff goes first.
-- Properties followed by methods
-- Grouped and sorted (_alpha order_ as preference)
-- Consistent naming and spelling matter
-- Small functions are better to read and faster to understand the purpose. If your function has more than 10 lines you need to ask yourself if it would be better to break it into smaller functions.
-
-### Components 🅰️
-
-- Prefixing your components is a good practice. selector: ‘app-component-name’
-- Separating the HTML, CSS and TypeScript files is also a good practice. If you don't need a file (i.e. the styles), you can simply delete it.
-- Inputs: declare it inside of the class and at the beginning.
-- Outputs: declare it inside of the class and at the beginning. After the inputs.
-- Delegate complex logic to services: If we are talking about one or two lines of logic, maybe it’s ok to leave it in the component. If not, move the logic into a service.
-- Component member sequence: public methods must be declared before private ones.
-
-### Services 🅰️
-
-- Make services as injectable: this is necessary only when a service injects another service, but is recommended to use every time, because
-  you never know when the service will need to inject another one (dependency injection) and it will be hard to remember that we decided not to use the injectable decorator. The recommendation is to use always `@Injectable`
-
-- Using services for data retrieval: invocating again the , our component must call a service to get some data. If we need to update the call [SPR](https://en.wikipedia.org/wiki/Single-responsibility_principle) in our service, the component remains the same. The component shouldn’t have to think how to get the data and it shouldn’t have to know if the data comes from an API or localStorage. The responsibility of the component is only to know that he had the necessity to call the service. The service has the duty to know where and how to get the data. So, please, avoid the temptation to call the API directly on your component.
-
-### Extra 🅰️
-
-- Use the power of Angular CLI
-- Take advantage of Angular life cycle hooks
 
 ## Coding tools
 
@@ -170,3 +120,6 @@ This source content is licensed under the _Creative Commons Attribution 4.0 Inte
 Feel free to propose improvements via pull request. Authored and maintained by [Adrián Aguado](https://github.com/aguadotzn). Copyright © 2023.
 
 > For any inquiries, you can contact me on [Twitter](https://twitter.com/aguadotzn).
+
+> ⚠️ **Disclaimer** ⚠️
+> This notes are totally personal
