@@ -1,20 +1,23 @@
-# Personal 🅰️ notes ![Typescript](https://img.shields.io/badge/-Typescript-blue)
 
-A bit of everything about angular. Personal notes about the framework.
+<div style="width: 100%;">
+  <img src="resources/title.svg" style="width: 100%;" alt="Click to see the source">
+</div>
+
+## Introduction
+These are my **personal** notes about Angular, Typescript and everything in between. I hope they are useful for you. Fully opinionated with my experience.
 
 
 ## Table of Contents
 - General
 1. [Commands](#commands)
 2. [Basics](#basics)
-3. [Architecture](#architecture)
 
 - Advanced
 
-4. [Best practices](#best-practices)
-5. [Architecture](#architecture)
-6. [Q&A](#q&a)
-7. [Coding tools](#coding-tools)
+3. [Best practices](#best-practices)
+4. [Architecture](#architecture)
+5. [Q&A](#q&a)
+6. [Tools](#coding-tools)
 
 ## Commands ([Angular CLI](https://angular.io/cli))
 
@@ -32,7 +35,7 @@ Use this commands inside an angular project.
 
 ## Basics
 
-If you are new into Angular please visit the basics page on how to installe it
+If you are new into Angular please visit the basics page to know how to installed, what you need and many more.
 
 ## Architecture
 
@@ -51,7 +54,7 @@ Let's explore the different parts
 - **SHARED**: Consider `shared` directory module as a mini-library for the UI components or for third-party components. They are not specific to a single business feature. They should be super dumb that you can take all the components, drop in another angular project, and expect to work (given the dependencies are met). This module can be then imported to each feature module.
   > Do not make a giant `SharedModule`, rather granularize each atomic feature into its own module.
   
-  > Do not make a giant `SharedModule`, rather granularize each atomic feature into its own module.
+  > I'm my last projects I've been used `standalone components` to create my `ui-library` or `shared` folder
 
 
 
@@ -121,5 +124,10 @@ Feel free to propose improvements via pull request. Authored and maintained by [
 
 > For any inquiries, you can contact me on [Twitter](https://twitter.com/aguadotzn).
 
-> ⚠️ **Disclaimer** ⚠️
-> This notes are totally personal
+
+<div style="width: 100%;">
+        <a href="topics/Basics.md">
+
+  <img src="resources/card.svg" style="width: 100%;" alt="Click to see the source">
+  </a>
+</div>

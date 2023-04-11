@@ -1,3 +1,7 @@
+---
+title: A snippets
+---
+
 <details> 
   <summary>Create component</summary>
   
