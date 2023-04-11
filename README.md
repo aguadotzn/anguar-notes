@@ -143,7 +143,7 @@ Feel free to propose improvements via pull request. Authored and maintained by [
 
 
 <div style="width: 100%;">
-        <a href="topics/Basics.md">
+        <a href="topics/Basics">
 
   <img src="resources/card.svg" style="width: 100%;" alt="Click to see the source">
   </a>
