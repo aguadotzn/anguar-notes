@@ -148,3 +148,11 @@ Feel free to propose improvements via pull request. Authored and maintained by [
   <img src="resources/card.svg" style="width: 100%;" alt="Click to see the source">
   </a>
 </div>
+
+<div style="width: 100%;">
+        <a href="topics/AngularSnippets">
+
+  <img src="resources/card.svg" style="width: 100%;" alt="Click to see the source">
+  </a>
+</div>
+
